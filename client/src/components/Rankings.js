@@ -13,9 +13,6 @@ const Rankings = ({ allCrypto, getCrypto }) => {
             
         let top_ten = sortedHigh.slice(0, 10);
 
-         
-
-
         useEffect(() => {
             setTopTen(top_ten)
         }, [])
@@ -30,7 +27,7 @@ const Rankings = ({ allCrypto, getCrypto }) => {
         let bottom_ten = sortedLow.slice(0, 10)   
 
         useEffect(() => {
-            setBottomTen(sortedLow.slice(0, 10))
+            setBottomTen(bottom_ten)
         }, [])
 
    
